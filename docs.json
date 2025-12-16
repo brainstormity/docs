@@ -14,14 +14,12 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "SUI Flow Whitepaper",
+            "group": "SUI Flow",
             "pages": [
               "index",
-              "whitepaper/introduction",
-              "whitepaper/solution",
-              "whitepaper/technology-security",
-              "whitepaper/nft-roadmap",
-              "whitepaper/getting-started"
+              "what-is-sui-flow",
+              "nft-mint",
+              "how-to-whitelist"
             ]
           }
         ]
