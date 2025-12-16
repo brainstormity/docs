@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "SUI Flow Docs",
+  "name": "SUI Flow",
   "colors": {
     "primary": "#7B3FE4",
     "light": "#F17BC1",
@@ -28,18 +28,7 @@
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
@@ -49,18 +38,22 @@
   "navbar": {
     "links": [
       {
+        "label": "Website",
+        "href": "https://suiflow.brainstormity.com"
+      },
+      {
         "label": "Discord",
-        "href": "https://discord.gg/sui-flow"
+        "href": "https://discord.gg/A2BCYUVJs4"
       },
       {
         "label": "Twitter / X",
-        "href": "https://x.com/sui_flow"
+        "href": "https://x.com/suiflowapp"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Join Beta Waitlist",
-      "href": "https://sui-flow.xyz"
+      "href": "https://discord.gg/A2BCYUVJs4"
     }
   },
   "contextual": {
@@ -77,8 +70,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/sui_flow",
-      "discord": "https://discord.gg/sui-flow"
+      "x": "https://x.com/suiflowapp",
+      "discord": "https://discord.gg/A2BCYUVJs4",
+      "website": "https://suiflow.brainstormity.com"
     }
   }
 }
