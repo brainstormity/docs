@@ -30,8 +30,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/sui-flow-logo.png",
+    "dark": "/logo/sui-flow-logo.png"
   },
   "navbar": {
     "links": [
