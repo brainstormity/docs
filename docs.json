@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SUI Flow Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7B3FE4",
+    "light": "#F17BC1",
+    "dark": "#090E1A"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -22,33 +22,6 @@
               "whitepaper/technology-security",
               "whitepaper/nft-roadmap",
               "whitepaper/getting-started"
-            ]
-          },
-          {
-            "group": "Builder guides",
-            "pages": [
-              "quickstart",
-              "development"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
@@ -76,14 +49,18 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Discord",
+        "href": "https://discord.gg/sui-flow"
+      },
+      {
+        "label": "Twitter / X",
+        "href": "https://x.com/sui_flow"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Join Beta Waitlist",
+      "href": "https://sui-flow.xyz"
     }
   },
   "contextual": {
@@ -100,9 +77,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/sui_flow",
+      "discord": "https://discord.gg/sui-flow"
     }
   }
 }
