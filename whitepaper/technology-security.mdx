@@ -1,0 +1,64 @@
+---
+title: "Technology, Security & Tokens"
+description: "The architecture choices, key safeguards, and token coverage that power SUI Flow."
+---
+
+## Technology & Security
+
+### Architecture Principles
+
+SUI Flow is built with security and reliability at its core, prioritizing safe key handling, isolated server data, and predictable user experiences.
+
+### Security Measures
+
+1. **Encrypted Private Keys**
+   - All private keys are encrypted using Fernet symmetric encryption
+   - Keys are never transmitted or displayed in plaintext
+   - Encryption keys are stored separately from encrypted data
+2. **Deterministic Wallet Derivation**
+   - Wallets derived from secure seed phrases using ED25519
+   - User-specific derivation paths ensure unique addresses
+   - BIP-44 compatible derivation standards
+3. **Ephemeral Signing**
+   - Private keys loaded only at transaction time
+   - Immediate disposal after signing
+   - No persistent memory of sensitive data
+4. **Server Isolation**
+   - Each Discord server maintains separate user records
+   - Cross-server wallet data is fully isolated
+   - Server registration required for bot activation
+5. **Gas Reserve Protection**
+   - Automatic reserve of 0.01 SUI prevents wallet lockout
+   - Users cannot accidentally drain gas funds
+   - Ensures future transaction capability
+
+### Smart Contract Integration
+
+SUI Flow leverages proven smart contracts:
+
+- **Dipcoin Protocol**: For swap routing and liquidity operations
+- **Native SUI Transfers**: Direct interaction with Sui's built-in transfer functions
+- **Move-based Security**: Benefiting from Sui's type-safe smart contract language
+
+---
+
+## Supported Tokens
+
+SUI Flow supports major tokens in the Sui ecosystem:
+
+| Token       | Description                 |
+| ----------- | --------------------------- |
+| **SUI**     | Native Sui blockchain token |
+| **USDC**    | USD Coin stablecoin on Sui  |
+| **WAL**     | Walrus Protocol token       |
+| **DEEP**    | DeepBook DEX token          |
+| **SEND**    | Send Protocol token         |
+| **CETUS**   | Cetus AMM token             |
+| **BLUE**    | Bluefin Protocol token      |
+| **NS**      | Sui Name Service token      |
+| **HAEDAL**  | Haedal Protocol token       |
+| **NAVX**    | NAVI Protocol token         |
+| **suiUSDT** | Tether on Sui               |
+| **haSUI**   | Liquid staked SUI           |
+
+_Additional tokens added regularly based on community demand and liquidity availability._
