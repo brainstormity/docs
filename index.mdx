@@ -1,97 +1,358 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "SUI Flow Whitepaper"
+description: "The Discord-Native Wallet for the SUI Ecosystem"
 ---
 
-## Setting up
+<img
+  src="https://github.com/brainstormity/Assets/blob/main/SUI%20Flow/sui-flow-banner.png?raw=true"
+  alt="SUI Flow Banner"
+  style={{ width:"100%" }}
+/>
 
-Get your documentation site up and running in minutes.
+# SUI Flow Whitepaper
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+## The Discord-Native Wallet for the SUI Ecosystem
 
-## Make it yours
+**Version 1.0 | December 2024**
 
-Design a docs site that looks great and empowers your users.
+---
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+## Table of Contents
 
-## Create beautiful pages
+ 1. [Introduction](#introduction)
+ 2. [The Problem](#the-problem)
+ 3. [Our Solution: SUI Flow](#our-solution-sui-flow)
+ 4. [Core Features](#core-features)
+ 5. [Technology & Security](#technology--security)
+ 6. [Supported Tokens](#supported-tokens)
+ 7. [NFT Collection](#nft-collection)
+ 8. [Roadmap](#roadmap)
+ 9. [Getting Started](#getting-started)
+10. [Conclusion](#conclusion)
 
-Everything you need to create world-class documentation.
+---
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+## Introduction
 
-## Need inspiration?
+**SUI Flow** is a revolutionary Discord-native wallet built on the Sui Network, designed to bring seamless cryptocurrency management directly into Discord communities. No external apps, no browser extensions, no complicated setups—just pure, frictionless blockchain interaction where your community already lives.
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+In an era where Discord has become the beating heart of crypto communities, SUI Flow bridges the gap between social engagement and on-chain activity, enabling users to manage their digital assets without ever leaving their favorite servers.
+
+---
+
+## The Problem
+
+### Current Challenges in Crypto Communities
+
+1. **Friction in User Experience**
+   - Users must constantly switch between Discord and external wallet applications
+   - Multiple browser tabs, extensions, and apps create confusion
+   - New users face intimidating onboarding processes
+2. **Community Engagement Barriers**
+   - Tipping community contributors requires complex off-platform transactions
+   - Real-time trading discussions can't translate to instant actions
+   - Project teams struggle to onboard non-crypto-native members
+3. **Security Concerns**
+   - External links to wallet sites pose phishing risks
+   - Users exposed to malicious dApps and scam sites
+   - Confusion about legitimate vs. fraudulent wallet interfaces
+4. **Missed Opportunities**
+   - Trading alpha shared in Discord can't be acted upon instantly
+   - Community rewards require manual, off-platform distribution
+   - Seamless project integration remains elusive
+
+---
+
+## Our Solution: SUI Flow
+
+SUI Flow eliminates these barriers by embedding a fully functional wallet directly within Discord. Our platform leverages the Sui Network's high-speed, low-cost infrastructure to deliver:
+
+- **Instant Access**: One command opens your complete wallet dashboard
+- **Zero Setup**: Wallets are automatically created for users on first interaction
+- **Native Feel**: Actions feel like natural Discord interactions, not crypto transactions
+- **Community Integration**: Servers can deploy SUI Flow for their entire community
+
+### Why Sui Network?
+
+The Sui blockchain provides the ideal foundation for SUI Flow:
+
+- **Sub-second finality** for instant transaction confirmations
+- **Low gas fees** making micro-transactions economically viable
+- **Object-centric model** enabling smooth wallet operations
+- **Growing ecosystem** with expanding DeFi and NFT opportunities
+
+---
+
+## Core Features
+
+### 👛 My Wallet
+
+Your complete wallet dashboard accessible with a single `/wallet` command:
+
+- **View Balances**: Check your SUI and token holdings instantly
+- **Wallet Address**: Easy copy-paste address with QR code generation
+- **Real-time Updates**: Balances refresh on every interaction
+- **Transaction History**: Track your on-chain activity via direct Suiscan links
+
+### 💳 Deposit
+
+Fund your wallet seamlessly:
+
+- **QR Code Generation**: Scan to deposit from any external wallet
+- **Copy Address**: One-click address copying for easy transfers
+- **Multi-Source Support**: Receive from exchanges, wallets, or other users
+
+### 📤 Withdraw
+
+Send tokens to any Sui address:
+
+- **Intuitive Modal Interface**: Enter recipient and amount in a clean popup
+- **Pre-filled Max Amount**: Automatically suggests maximum withdrawable balance
+- **Gas Reserve**: Smart reserve keeps small SUI amount for future transactions
+- **Transaction Confirmation**: Direct links to Suiscan for verification
+
+### 🔁 Swap Tokens
+
+Exchange tokens directly within Discord:
+
+- **Wide Token Support**: Swap between popular Sui ecosystem tokens
+- **Balance-Aware**: Only shows tokens you actually hold
+- **Configurable Slippage**: Choose from 0.5%, 1%, 3%, or 5% slippage tolerance
+- **Real-time Quotes**: See expected output before confirming
+- **Confirmation Flow**: Review swap details before execution
+
+**Powered by Dipcoin Protocol** — SUI Flow integrates with Dipcoin's automated market maker (AMM) to provide:
+
+- Optimal swap routing
+- Deep liquidity access
+- Minimal slippage on trades
+
+### 🪙 Tip Members
+
+Reward community contributions on-chain:
+
+- **Tag-to-Tip**: Simply use `/tip @username amount` to send SUI
+- **Instant Delivery**: Recipient's wallet is created automatically if needed
+- **On-Chain Proof**: Every tip is a verifiable blockchain transaction
+- **Community Building**: Encourage engagement with tangible rewards
+
+### 💧 Liquidity Pools
+
+Manage your DeFi positions (coming soon):
+
+- **View Pool Positions**: Track your LP tokens and APRs
+- **Add Liquidity**: Provide liquidity directly from Discord
+- **Remove Liquidity**: Withdraw your share with slippage protection
+
+---
+
+## Technology & Security
+
+### Architecture
+
+SUI Flow is built with security and reliability at its core:
+
+### Security Measures
+
+1. **Encrypted Private Keys**
+   - All private keys are encrypted using Fernet symmetric encryption
+   - Keys are never transmitted or displayed in plaintext
+   - Encryption keys are stored separately from encrypted data
+2. **Deterministic Wallet Derivation**
+   - Wallets derived from secure seed phrases using ED25519
+   - User-specific derivation paths ensure unique addresses
+   - BIP-44 compatible derivation standards
+3. **Ephemeral Signing**
+   - Private keys loaded only at transaction time
+   - Immediate disposal after signing
+   - No persistent memory of sensitive data
+4. **Server Isolation**
+   - Each Discord server maintains separate user records
+   - Cross-server wallet data is fully isolated
+   - Server registration required for bot activation
+5. **Gas Reserve Protection**
+   - Automatic reserve of 0.01 SUI prevents wallet lockout
+   - Users cannot accidentally drain gas funds
+   - Ensures future transaction capability
+
+### Smart Contract Integration
+
+SUI Flow leverages proven smart contracts:
+
+- **Dipcoin Protocol**: For swap routing and liquidity operations
+- **Native SUI Transfers**: Direct interaction with Sui's built-in transfer functions
+- **Move-based Security**: Benefiting from Sui's type-safe smart contract language
+
+---
+
+## Supported Tokens
+
+SUI Flow supports major tokens in the Sui ecosystem:
+
+| Token       | Description                 |
+| ----------- | --------------------------- |
+| **SUI**     | Native Sui blockchain token |
+| **USDC**    | USD Coin stablecoin on Sui  |
+| **WAL**     | Walrus Protocol token       |
+| **DEEP**    | DeepBook DEX token          |
+| **SEND**    | Send Protocol token         |
+| **CETUS**   | Cetus AMM token             |
+| **BLUE**    | Bluefin Protocol token      |
+| **NS**      | Sui Name Service token      |
+| **HAEDAL**  | Haedal Protocol token       |
+| **NAVX**    | NAVI Protocol token         |
+| **suiUSDT** | Tether on Sui               |
+| **haSUI**   | Liquid staked SUI           |
+
+_Additional tokens added regularly based on community demand and liquidity availability._
+
+---
+
+## NFT Collection
+
+### 🎨 SUI Flow Genesis NFT
+
+Unlock the full power of SUI Flow with our exclusive NFT collection.
+
+#### Collection Details
+
+| Attribute           | Value           |
+| ------------------- | --------------- |
+| **Blockchain**      | SUI             |
+| **Total Supply**    | 2,222 NFTs      |
+| **Mint Date**       | To Be Announced |
+| **Whitelist Price** | FREE            |
+| **Public Price**    | 10 SUI          |
+
+#### NFT Holder Benefits
+
+- ✅ **Full Feature Access**: Unlock all current and future SUI Flow features
+- ✅ **Priority Updates**: First access to new features and improvements
+- ✅ **Governance Rights**: Vote on future development priorities
+- ✅ **Exclusive Channels**: Access holder-only Discord channels
+- ✅ **Future Airdrops**: Eligible for ecosystem rewards and airdrops
+
+### 🎯 How to Get Whitelisted
+
+Earn coins to claim your FREE whitelist spot:
+
+#### Earning Methods
+
+| Activity                   | Reward                                |
+| -------------------------- | ------------------------------------- |
+| **Invite Users**           | 100 coins per verified invite         |
+| **Chat Messages**          | 1 coin per message (with cooldowns)   |
+| **React to Announcements** | 1 coin per reaction (within 48 hours) |
+| **X/Twitter Engagement**   | Participate in raids for coins        |
+| **Complete Quests**        | Earn coins through community tasks    |
+| **Participate in Games**   | Win coins in community games          |
+
+#### Claiming Your Whitelist
+
+1. Collect coins through the activities above
+2. Use `/invites-check` to track your invite rewards
+3. Monitor your coin balance in the community dashboard
+4. Claim whitelist when you've earned enough coins
+
+---
+
+## Roadmap
+
+### Phase 1: Foundation ✅
+
+- Core wallet functionality (view, deposit, withdraw)
+- Token swap integration with Dipcoin
+- Tipping system for community rewards
+- Secure encrypted key storage
+
+### Phase 2: Enhancement 🔄
+
+- Liquidity pool management interface
+- Multi-token tipping support
+- Transaction history viewer
+- Portfolio analytics dashboard
+
+### Phase 3: Expansion 📅
+
+- NFT viewing and transfers
+- Automated trading features
+- Cross-server token transfers
+- Mobile-optimized interfaces
+
+### Phase 4: Ecosystem 🚀
+
+- DAO governance integration
+- Custom community tokens
+- Advanced DeFi strategies
+- White-label solutions for projects
+
+---
+
+## Getting Started
+
+### For Users
+
+1. **Join a SUI Flow-enabled server**
+2. **`Use /wallet to open your wallet`**
+3. **Deposit SUI to your generated address**
+4. **Start swapping, tipping, and trading!**
+
+### For Server Admins
+
+1. **Invite SUI Flow to your server**
+2. **Contact the team for server activation**
+3. **`Use /menu to deploy the interactive wallet panel`**
+4. **Configure in any text channel for community access**
+
+### Commands Overview
+
+| Command             | Description                               |
+| ------------------- | ----------------------------------------- |
+| `/wallet`           | Open your personal wallet dashboard       |
+| `/menu`             | (Admin) Deploy SUI Flow menu to a channel |
+| `/pools`            | View and manage liquidity positions       |
+| `/tip @user amount` | Send SUI tip to a community member        |
+
+---
+
+## Access & Availability
+
+### Beta Launch
+
+SUI Flow beta is coming soon for early adopters. Join our Discord to be notified!
+
+### For Projects
+
+- **Free Integration**: Add SUI Flow to your server at no cost
+- **Custom Branding**: White-label options available
+- **Dedicated Support**: Priority assistance for project integrations
+
+### For NFT Holders
+
+- **Full Access**: All features unlocked immediately
+- **Future Updates**: Automatic access to new capabilities
+- **Community Voice**: Direct input on feature development
+
+---
+
+## Conclusion
+
+SUI Flow represents the next evolution in how crypto communities interact with blockchain technology. By embedding a complete wallet experience within Discord, we're removing the friction that has long separated social engagement from on-chain activity.
+
+Whether you're a casual user wanting to tip your favorite content creator, a trader needing quick access to swap opportunities shared in alpha channels, or a project looking to onboard your community to crypto seamlessly—SUI Flow is built for you.
+
+**Join the Flow. Stay in Discord. Do DeFi.**
+
+---
+
+**Connect With Us**
+
+Discord • Twitter/X • Website
+
+_SUI Flow — Your Wallet, Your Community, Your Chain_
+
+---
+
+_This whitepaper is for informational purposes only. Features and specifications are subject to change as development continues. Always do your own research before participating in any cryptocurrency activities._
+
+**© 2024 SUI Flow. All rights reserved.**
